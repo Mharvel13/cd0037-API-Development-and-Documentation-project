@@ -104,19 +104,19 @@ class TriviaTestCase(unittest.TestCase):
 
 
 
-    # def test_delete_question(self):
-    #     client_response  = self.client().delete('/questions/17')
-    #     client_response_data = json.loads(client_response.data)
+    def test_delete_question(self):
+        client_response  = self.client().delete('/questions/17')
+        client_response_data = json.loads(client_response.data)
 
-    #     success_data = client_response_data.get('success')
-    #     deleted_question_data = client_response_data.get('deleted_question')
+        success_data = client_response_data.get('success')
+        deleted_question_data = client_response_data.get('deleted_question')
 
-    #     specific_question = Question.query.filter(Question.id == 17).one_or_none()
+        specific_question = Question.query.filter(Question.id == 17).one_or_none()
 
-    #     self.assertEqual(client_response.status_code, 200)
-    #     self.assertEqual(success_data, True)
-    #     self.assertEqual(deleted_question_data, 17)
-    #     self.assertEqual(specific_question, None)
+        self.assertEqual(client_response.status_code, 200)
+        self.assertEqual(success_data, True)
+        self.assertEqual(deleted_question_data, 17)
+        self.assertEqual(specific_question, None)
 
 
     def test_404_if_question_does_not_exist(self):

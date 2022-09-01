@@ -47,3 +47,11 @@ Pay special attention to what data the frontend is expecting from each API respo
 By making notes ahead of time, you will practice the core skill of being able to read and understand code and will have a simple plan to follow to build out the endpoints of your backend API.
 
 > View the [Frontend README](./frontend/README.md) for more details.
+
+
+### API Documentation
+
+The [API Documentation](./frontend/README.md) directory contains a complete documentation and expected endpoints for the API.
+There's also a preview of what the endpoint results will be when tested and used.
+
+> View the [API Documentation README](./API%20Documentation.md) for more details.

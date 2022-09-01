@@ -14,3 +14,4 @@ Thumbs.db
 env/
 frontend/node_modules/
 backend/__pycache__
+frontend/package-lock.json
