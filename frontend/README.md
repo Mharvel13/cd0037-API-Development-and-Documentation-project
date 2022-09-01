@@ -157,7 +157,7 @@ You can optionally update this game play to increase the number of questions or 
 
 ```json
 {
-    'previous_questions': [1, 4, 20, 15]
+   'previous_questions': [1, 4, 20, 15]
     quiz_category': 'current category'
  }
 ```
